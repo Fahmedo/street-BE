@@ -93,7 +93,7 @@ jobs:
 
             echo "Writing environment variables..."
             cat > .env <<'EOF'
-            ${{ secrets.APP_ENV }}
+            ${{ secrets.STAGING_ENV }}
             EOF
 
             chmod 600 .env
