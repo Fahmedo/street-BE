@@ -1,0 +1,21 @@
+export const OrganizationUserMessage = {
+  SHORT_CODE_EXISTS: 'Organization short code already exists',
+  USER_NOT_FOUND: 'User not found',
+  USER_CREATED: 'User account created successfully',
+  INVALID_CREDENTIALS: 'Invalid credentials',
+  INVALID_REFRESH_TOKEN: 'Invalid refresh token',
+  EMAIL_REQUIRED: 'Email is required',
+  EMAIL_ALREADY_IN_USE: 'Email is already in use',
+  OTP_SENT: 'Password reset OTP has been sent to your email',
+  OTP_REQUIRED: 'OTP is required',
+  INVALID_OTP: 'Invalid OTP',
+  OTP_EXPIRED: 'OTP has expired',
+  OTP_VERIFIED: 'OTP verified successfully',
+  PASSWORD_RESET_SUCCESS: 'Password has been reset successfully',
+  IS_VALID_PASSWORD:
+    'Password must be at least 8 characters long and include uppercase, lowercase, number, and special character',
+  PASSWORDS_DO_NOT_MATCH: 'New password and confirm password do not match',
+  LOGIN_SUCCESS: 'Login successful',
+  REFRESH_TOKEN_SUCCESS: 'Access token refreshed successfully',
+  INVALID_TOKEN: 'Invalid token',
+};

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Activated – Street To School</title>
+  <style>
+    body { margin: 0; padding: 0; background-color: #f4f7f9; font-family: Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .header { background-color: #0891b2; padding: 32px 40px; text-align: center; }
+    .header h1 { color: #ffffff; margin: 0; font-size: 24px; }
+    .badge { text-align: center; padding: 32px 0 8px; }
+    .badge span { font-size: 56px; }
+    .body { padding: 16px 40px 40px; color: #333333; }
+    .body h2 { text-align: center; font-size: 22px; color: #0891b2; margin-top: 0; }
+    .body p { line-height: 1.7; font-size: 15px; }
+    .highlight { background: #ecfeff; border-left: 4px solid #0891b2; border-radius: 4px; padding: 16px 20px; margin: 24px 0; font-size: 15px; }
+    .footer { background: #f4f7f9; padding: 24px 40px; text-align: center; font-size: 12px; color: #888888; }
+    .footer a { color: #0891b2; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Street To School</h1>
+    </div>
+    <div class="badge"><span>🏫</span></div>
+    <div class="body">
+      <h2>School Activated</h2>
+      <p>Hi <strong>{{firstName}}</strong>,</p>
+      <p>
+        <strong>{{schoolName}}</strong> under <strong>{{organizationName}}</strong> has been
+        activated on the Street To School platform.
+      </p>
+
+      <div class="highlight">
+        You can now log in to manage attendance, student profiles, and school programmes for
+        <strong>{{schoolName}}</strong>.
+      </div>
+
+      <p>
+        If you have any questions, please reach out to your organization administrator or our
+        support team.
+      </p>
+    </div>
+    <div class="footer">
+      <p>&copy; {{currentYear}} Street To School. All rights reserved.</p>
+      <p>Need help? <a href="mailto:support@streettoshool.com">Contact Support</a></p>
+    </div>
+  </div>
+</body>
+</html>

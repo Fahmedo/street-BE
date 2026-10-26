@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .content {
+      padding: 30px;
+    }
+    .info-box {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-left: 4px solid #4CAF50;
+      margin: 25px 0;
+      border-radius: 4px;
+    }
+    .info-box h3 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+    .steps {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .steps h3 {
+      margin-top: 0;
+      color: #856404;
+    }
+    .steps ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .steps li {
+      margin: 8px 0;
+    }
+    .contact-box {
+      background-color: #e7f3ff;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 13px;
+    }
+    .divider {
+      height: 1px;
+      background-color: #e0e0e0;
+      margin: 25px 0;
+    }
+    .highlight {
+      color: #4CAF50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📋 Registration Received</h1>
+    </div>
+    
+    <div class="content">
+      <h2>Hello {{contactName}}! 👋</h2>
+      
+      <p>Thank you for registering <strong class="highlight">{{organizationName}}</strong> with Street To School!</p>
+      
+      <p>We've received your organization registration and our team is currently reviewing your application.</p>
+      
+      <div class="info-box">
+        <h3>📝 Registration Details</h3>
+        <p><strong>Organization Name:</strong> {{organizationName}}</p>
+        <p><strong>Contact Person:</strong> {{contactName}}</p>
+        <p><strong>Status:</strong> <span style="color: #ffc107;">⏳ Pending Review</span></p>
+      </div>
+      
+      <div class="steps">
+        <h3>⏭️ What Happens Next?</h3>
+        <ol>
+          <li><strong>Review Process:</strong> Our team will review your organization details</li>
+          <li><strong>Verification:</strong> We may contact you for additional information if needed</li>
+          <li><strong>Approval:</strong> Once approved, you'll receive another email with your admin credentials</li>
+          <li><strong>Get Started:</strong> You can then login and start setting up your organization</li>
+        </ol>
+      </div>
+      
+      <p><strong>⏱️ Timeline:</strong> Most applications are reviewed within 24-48 hours during business days.</p>
+      
+      <div class="divider"></div>
+      
+      <div class="contact-box">
+        <h3>💬 Need Help?</h3>
+        <p>If you have any questions about your registration or need to update any information, please don't hesitate to contact us.</p>
+        <p><strong>Email:</strong> <a href="mailto:{{supportEmail}}" style="color: #2196F3;">{{supportEmail}}</a></p>
+      </div>
+      
+      <p style="margin-top: 30px;">
+        We're excited to have you join the Street To School community!
+      </p>
+      
+      <p>
+        Best regards,<br>
+        <strong>The Street To School Team</strong>
+      </p>
+    </div>
+    
+    <div class="footer">
+      <p>This is an automated confirmation email from Street To School.</p>
+      <p style="margin-top: 10px;">
+        You're receiving this because you registered an organization on our platform.
+      </p>
+      <p style="margin-top: 15px; color: #999;">
+        &copy; 2024copy; {{currentYear}} Street To School. All rights reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
